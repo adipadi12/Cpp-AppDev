@@ -2,34 +2,31 @@
 #include "Adi.h"
 #include <ctime> 
 #include <cstdlib>
+#include "Arrow.h"
 using namespace std;
 
-void passByValue(int x);
-void passByReference(int* x);
 
 int main() {
-	int adi[5];
-	int* ad0 = &adi[0];
-	int* ad1 = &adi[1];
-
-	int* ad2 = &adi[2];
-
-	cout << "ad0 is at " << ad0 << endl;
-	cout << "ad1 is at " << ad1<< endl;
-
-	cout << "ad2 is at " << ad2 << endl;
-
-	ad0++;
-	cout << "ad0 is " << ad0; //the address becomes that of ad1
+	Arrow arr;
+	cout << "wtf" << endl;
 }
 
-void passByValue(int x) {
-	x = 99;
-}
-
-void passByReference(int *x) {
-	*x = 66;
-}
+//int main() {
+//	Arrow arrowObject;
+//	Arrow *arrowPointer = &arrowObject;
+//	arrowObject.printCrap();
+//
+//	arrowObject.printCrap(); //when using object use .
+//	arrowPointer->printCrap(); //when using a pointer use arrow
+//}
+//
+//void passByValue(int x) {
+//	x = 99;
+//}
+//
+//void passByReference(int *x) {
+//	*x = 66;
+//}
 //void printArray(int theArray[], int sizeOfArray) {
 //	for (int x = 0; x < sizeOfArray; x++)
 //	{
