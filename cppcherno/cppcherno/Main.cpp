@@ -8,15 +8,19 @@ void passByValue(int x);
 void passByReference(int* x);
 
 int main() {
-	int ass = 13;
-	int poo = 13;
+	int adi[5];
+	int* ad0 = &adi[0];
+	int* ad1 = &adi[1];
 
-	passByValue(ass); //makes the copy of ass into 99 not the original asss
-	passByReference(&poo); //alters the original value of poo
+	int* ad2 = &adi[2];
 
-	cout << "ass is now " << ass << endl;
-	cout << "poo is now " << poo << endl;
+	cout << "ad0 is at " << ad0 << endl;
+	cout << "ad1 is at " << ad1<< endl;
 
+	cout << "ad2 is at " << ad2 << endl;
+
+	ad0++;
+	cout << "ad0 is " << ad0;
 }
 
 void passByValue(int x) {
