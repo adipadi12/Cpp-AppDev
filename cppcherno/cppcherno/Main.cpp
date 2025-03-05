@@ -4,14 +4,24 @@
 #include <cstdlib>
 using namespace std;
 
-int tuna = 69;
-
-
-int main() {
-	double tuna = 20;
-	cout << ::tuna; //unary operator used to call the global variable outside of the one defined in the function
+void printNumber(int x) {
+	cout << "priniting int " << x << endl;
 }
 
+void printNumber(float x) {
+	cout << "print a float " << x << endl;
+}
+int main() {
+	int a = 54;
+	float b = 32.57;
+
+	printNumber(a);
+	printNumber(b);
+}
+//int tuna = 69;
+//int main() {
+//	double tuna = 20;
+//	cout << ::tuna; //unary operator used to call the global variable outside of the one defined in the function
 
 
 //int volume(int l = 1, int w = 1, int h = 1);
