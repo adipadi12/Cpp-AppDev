@@ -5,22 +5,11 @@ using namespace std;
 
 int main() {
 	Adi adi;
-	int age;
-	int totalNoAges = 0;
-	int totalAge = 0;
+	int x = 20;
 
-	cout << "enter first persons age or -1 to quit" << endl;
-	cin >> age;
-	while (age != -1) {
-		
-		totalAge += age;
-		totalNoAges++;
+	cout << ++x << endl;
+	cout << x << endl;
 
-		cout << "Enter age of next persons or -1 to quit: " << endl;
-		cin >> age;
-	}
-	cout << "no of people are " << totalNoAges;
-	cout << "Average age is " << totalAge / totalNoAges;
 }
 
 
