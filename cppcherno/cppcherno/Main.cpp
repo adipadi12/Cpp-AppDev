@@ -13,6 +13,10 @@ int addNumbers(int x, int y) {
 
 class AdisClass {
 	public:
+		AdisClass(string z) { //constructor creation
+			//cout << "this printed automatically" << endl;
+			setName(z);
+		}
 		void setName(string x) {
 			name = x; //setter method. made to access a private thing inside the class
 
@@ -32,7 +36,11 @@ int main() {
 	//printShit(69);
 	//cout << addNumbers(8, 10);
 
-	AdisClass adipadi; //named my class adipadi just like a variable
+	AdisClass adipadi("lucky adi"); //named my class adipadi just like a variable
+	cout << adipadi.getName();
+
+	AdisClass pihupillu("pillu potty");
+	cout << pihupillu.getName();
 	//adipadi.coolShit(); //using a dot . we can access the functions in that class
 
 	adipadi.setName("poopy");
