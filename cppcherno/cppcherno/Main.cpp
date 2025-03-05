@@ -5,6 +5,7 @@
 #include "Arrow.h"
 #include "Birthday.h"
 #include "People.h"
+#include <fstream>
 using namespace std;
 
 class StinkFist {
@@ -24,6 +25,11 @@ void stinkysFriend(StinkFist& sfo) {
 int main() {
 	StinkFist bob;
 	stinkysFriend(bob);
+	ofstream file;
+	file.open("poop.txt");
+
+	file << "I love Shreya Gupta \n";
+	file.close();
 }
 
 //int main() {
