@@ -4,15 +4,27 @@
 #include <cstdlib>
 using namespace std;
 
+void passByValue(int x);
+void passByReference(int* x);
+
 int main() {
-	int fish = 5;
+	int ass = 13;
+	int poo = 13;
 
-	cout << &fish << endl; //pointer is a variable that contains a memory address
+	passByValue(ass); //makes the copy of ass into 99 not the original asss
+	passByReference(&poo); //alters the original value of poo
 
-	int* fishPointer;
-	fishPointer = &fish;
+	cout << "ass is now " << ass << endl;
+	cout << "poo is now " << poo << endl;
 
-	cout << fishPointer << endl;
+}
+
+void passByValue(int x) {
+	x = 99;
+}
+
+void passByReference(int *x) {
+	*x = 66;
 }
 //void printArray(int theArray[], int sizeOfArray) {
 //	for (int x = 0; x < sizeOfArray; x++)
