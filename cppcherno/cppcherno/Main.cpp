@@ -4,20 +4,35 @@
 #include <cstdlib>
 using namespace std;
 
-void printNumber(int x) {
-	cout << "priniting int " << x << endl;
+int factorial(int x) {
+	if (x == 1)
+	{
+		return 1;
+	}
+	else {
+		return x * factorial(x - 1);
+	}
 }
 
-void printNumber(float x) {
-	cout << "print a float " << x << endl;
-}
 int main() {
-	int a = 54;
-	float b = 32.57;
-
-	printNumber(a);
-	printNumber(b);
+	cout << factorial(5);
 }
+
+
+//void printNumber(int x) {
+//	cout << "priniting int " << x << endl;
+//}
+//
+//void printNumber(float x) {
+//	cout << "print a float " << x << endl;
+//}
+//int main() {
+//	int a = 54;
+//	float b = 32.57;
+//
+//	printNumber(a);
+//	printNumber(b);
+//}
 //int tuna = 69;
 //int main() {
 //	double tuna = 20;
