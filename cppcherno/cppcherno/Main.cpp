@@ -15,7 +15,15 @@ int factorial(int x) {
 }
 
 int main() {
-	cout << factorial(5);
+	int buck[9];
+
+	cout << "Element - Value" << endl;
+
+	for (int i = 0; i <= 8; i++)
+	{
+		buck[i] = 99;
+		cout << i << " ------- " << buck[i] << endl;
+	}
 }
 
 
