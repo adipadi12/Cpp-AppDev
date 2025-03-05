@@ -3,12 +3,17 @@
 #include <ctime> 
 #include <cstdlib>
 #include "Arrow.h"
+#include "Birthday.h"
+#include "People.h"
 using namespace std;
 
 
 int main() {
-	Arrow arr(3,87);
-	arr.print();
+	Birthday birthObj(5, 6, 2004);
+
+	People adiPadi("AdiLordGay", birthObj);
+	adiPadi.printInfo();
+
 }
 
 //int main() {
