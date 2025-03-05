@@ -4,26 +4,22 @@
 #include <cstdlib>
 using namespace std;
 
-void printArray(int theArray[], int sizeOfArray);
-
 int main() {
-	int asss[2][3] = { {1,2,3}, {5,6,7} };
-	
-	for (int row = 0; row < 2; row++)
-	{
-		for(int column = 0; column < 3; column++)
-		{
-			cout << asss[row][column] << " " ;
-		}
-		cout << endl;
-	}
+	int fish = 5;
+
+	cout << &fish << endl; //pointer is a variable that contains a memory address
+
+	int* fishPointer;
+	fishPointer = &fish;
+
+	cout << fishPointer << endl;
 }
-void printArray(int theArray[], int sizeOfArray) {
-	for (int x = 0; x < sizeOfArray; x++)
-	{
-		cout << theArray[x] << endl;
-	}
-}
+//void printArray(int theArray[], int sizeOfArray) {
+//	for (int x = 0; x < sizeOfArray; x++)
+//	{
+//		cout << theArray[x] << endl;
+//	}
+//}
 
 //void printNumber(int x) {
 //	cout << "priniting int " << x << endl;
