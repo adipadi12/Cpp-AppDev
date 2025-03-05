@@ -4,15 +4,18 @@
 #include <cstdlib>
 using namespace std;
 
+int volume(int l = 1, int w = 1, int h = 1);
 int main() {
 	
 	srand(time(0)); //this is the seed for a random number generator. time calculates the time since 1970 using the clock
 	//hence this gives the illusion that the number generated is truly random
-	for (int i = 1; i < 25; i++)
-	{
-		cout << 1 + (rand() % 6) << endl;
-	}
+	cout << volume(5, 6);
 }
+int volume(int l, int w, int h) {
+	return l * w * h;
+}
+
+
 
 
 //void printLol(); //function prototype. allows code to be compiled even when function is called before declaration
