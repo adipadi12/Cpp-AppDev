@@ -15,15 +15,15 @@ int factorial(int x) {
 }
 
 int main() {
-	int buck[9];
+	int tuna[5] = { 3,6,4,5,45 };
+	int sum = 0;
 
-	cout << "Element - Value" << endl;
-
-	for (int i = 0; i <= 8; i++)
+	for (int x = 0; x < 5; x++)
 	{
-		buck[i] = 99;
-		cout << i << " ------- " << buck[i] << endl;
+		sum += tuna[x];
+		cout << sum << endl;
 	}
+	
 }
 
 
