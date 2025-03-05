@@ -11,9 +11,19 @@ int addNumbers(int x, int y) {
 	return (x + y);
 }
 
+class AdisClass {
+	public: //anything put after this can be used outside of this class. caled an access specifier
+		void coolShit() {
+			cout << "failing tomorrow" << endl;
+		}
+
+};
+
 int main() {
 	//printShit(69);
-	cout << addNumbers(8, 10);
+	//cout << addNumbers(8, 10);
+	AdisClass adipadi; //named my class adipadi just like a variable
+	adipadi.coolShit();
 	return 0;
 }
 
