@@ -7,13 +7,23 @@
 #include "People.h"
 using namespace std;
 
+class StinkFist {
+public:
+	StinkFist() { stinkyVar = 0; }
+private:
+	int stinkyVar;
+
+	friend void stinkysFriend(StinkFist& sfo);
+};
+
+void stinkysFriend(StinkFist& sfo) {
+	sfo.stinkyVar = 99;
+	cout << sfo.stinkyVar << endl;
+}
 
 int main() {
-	Birthday birthObj(5, 6, 2004);
-
-	People adiPadi("AdiLordGay", birthObj);
-	adiPadi.printInfo();
-
+	StinkFist bob;
+	stinkysFriend(bob);
 }
 
 //int main() {
