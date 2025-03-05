@@ -4,13 +4,21 @@
 using namespace std;
 
 int main() {
-	int x = 99;
-
-	do {
-		cout << x << endl;
-		x++;
-	} while (x < 10); //done if we want the program to run at least once
 	
+
+	int age = 18;
+
+	switch (age)
+	{
+	case 16:
+		cout << "bro can drive" << endl;
+		break;
+	case 18:
+		cout << "can vote" << endl;
+		break;
+	default:
+		cout << "cooked";
+	}
 }
 
 
