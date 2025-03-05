@@ -13,19 +13,21 @@ int factorial(int x) {
 		return x * factorial(x - 1);
 	}
 }
+void printArray(int theArray[], int sizeOfArray);
 
 int main() {
 	int tuna[5] = { 3,6,4,5,45 };
-	int sum = 0;
+	int girl[6] = { 4,6,7,8,7,7 };
 
-	for (int x = 0; x < 5; x++)
-	{
-		sum += tuna[x];
-		cout << sum << endl;
-	}
+	printArray(tuna, 3);
 	
 }
-
+void printArray(int theArray[], int sizeOfArray) {
+	for (int x = 0; x < sizeOfArray; x++)
+	{
+		cout << theArray[x] << endl;
+	}
+}
 
 //void printNumber(int x) {
 //	cout << "priniting int " << x << endl;
