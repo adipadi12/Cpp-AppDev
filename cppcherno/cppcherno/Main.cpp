@@ -3,18 +3,19 @@ using namespace std;
 
 void printLol(); //function prototype. allows code to be compiled even when function is called before declaration
 
-#include <stdio.h>
-void f(int* p, int* q) {
-	p = q;
-	*p = 2;
-}
-int i = 0, j = 1;
-int main() {
-	f(&i, &j);
-	printf("%d %d\n", i, j);
-	return 0;
+void printShit(int x) { //function parameters
+	cout << x;
 }
 
+int addNumbers(int x, int y) {
+	return (x + y);
+}
+
+int main() {
+	//printShit(69);
+	cout << addNumbers(8, 10);
+	return 0;
+}
 
 void printLol() {
 	cout << "NIGGGAAAAAAAAAAAA" << endl;
