@@ -20,7 +20,7 @@ int main() {
 	cout << "ad2 is at " << ad2 << endl;
 
 	ad0++;
-	cout << "ad0 is " << ad0;
+	cout << "ad0 is " << ad0; //the address becomes that of ad1
 }
 
 void passByValue(int x) {
