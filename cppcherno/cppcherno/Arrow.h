@@ -2,9 +2,11 @@
 class Arrow
 {
 public:
-	Arrow();
-	~Arrow();
-	void printShiz();
-	void printShiz2() const;
+	Arrow(int a, int b);
+	void print();
+	//~Arrow();
+private:
+	int regVar;
+	const int constVar;
 };
 

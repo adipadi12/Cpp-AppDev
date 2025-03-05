@@ -7,12 +7,8 @@ using namespace std;
 
 
 int main() {
-	Arrow arr;
-	cout << "wtf" << endl;
-	arr.printShiz();
-
-	const Arrow constObj;
-	constObj.printShiz2();
+	Arrow arr(3,87);
+	arr.print();
 }
 
 //int main() {
