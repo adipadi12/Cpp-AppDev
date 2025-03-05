@@ -8,10 +8,15 @@ int main() {
 	//order of precedence
 	int x = 75;
 
-	cout << x % 10 <<endl;
 	printLol();
+
+	cout << x % 10 << endl;
+	char c[] = "GATE2011";
+	char* p = c;
+
+	printf("%s", p + p[3] - p[1]);
 }
 
 void printLol() {
-	cout << "NIGGGAAAAAAAAAAAA";
+	cout << "NIGGGAAAAAAAAAAAA" << endl;
 }
