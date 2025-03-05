@@ -5,6 +5,15 @@ using namespace std;
 
 int main() {
 	Adi adi;
+	int x = 10;
+	int number;
+	int total = 0;
+	while (x <= 15) {
+		cin >> number;
+		total += number;
+		x++;
+	}
+	cout << total;
 }
 
 
