@@ -4,23 +4,19 @@
 #include <cstdlib>
 using namespace std;
 
-int factorial(int x) {
-	if (x == 1)
-	{
-		return 1;
-	}
-	else {
-		return x * factorial(x - 1);
-	}
-}
 void printArray(int theArray[], int sizeOfArray);
 
 int main() {
-	int tuna[5] = { 3,6,4,5,45 };
-	int girl[6] = { 4,6,7,8,7,7 };
-
-	printArray(tuna, 3);
+	int asss[2][3] = { {1,2,3}, {5,6,7} };
 	
+	for (int row = 0; row < 2; row++)
+	{
+		for(int column = 0; column < 3; column++)
+		{
+			cout << asss[row][column] << " " ;
+		}
+		cout << endl;
+	}
 }
 void printArray(int theArray[], int sizeOfArray) {
 	for (int x = 0; x < sizeOfArray; x++)
