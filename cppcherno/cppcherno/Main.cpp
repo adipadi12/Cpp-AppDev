@@ -28,7 +28,7 @@ int main() {
 	ofstream file;
 	file.open("poop.txt");
 
-	file << "I love Shreya Gupta \n";
+	file << "I love Shreya Gupta \n She Hits Me So Much";
 	file.close();
 }
 
