@@ -6,31 +6,12 @@
 #include "Birthday.h"
 #include "People.h"
 #include <fstream>
+#include "Hannah.h"
 using namespace std;
 
-class StinkFist {
-public:
-	StinkFist() { stinkyVar = 0; }
-private:
-	int stinkyVar;
-
-	friend void stinkysFriend(StinkFist& sfo);
-};
-
-void stinkysFriend(StinkFist& sfo) {
-	sfo.stinkyVar = 99;
-	cout << sfo.stinkyVar << endl;
-}
-
 int main() {
-	StinkFist bob;
-	stinkysFriend(bob);
-	ofstream file;
-	file.open("poop.txt");
-
-	file << "I love Shreya Gupta \n She Hits Me So Much";
-
-	file.close();
+	Hannah ho(23); //ho object takes address of Hannah and stores it in this keyword
+	ho.printShit();
 }
 
 //int main() {
