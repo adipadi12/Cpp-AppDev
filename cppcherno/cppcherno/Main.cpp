@@ -29,6 +29,7 @@ int main() {
 	file.open("poop.txt");
 
 	file << "I love Shreya Gupta \n She Hits Me So Much";
+
 	file.close();
 }
 
