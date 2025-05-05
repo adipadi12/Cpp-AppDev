@@ -2,14 +2,17 @@
 #include "Hannah.h"
 using namespace std;
 
-Hannah::Hannah(int num) 
-	:h (num)
+Hannah::Hannah() 
 {
 
 }
 
-void Hannah::printShit() {
-	cout << "h=" << h << endl;
-	cout << "this->" << this->h << endl;
-	cout << "(*this).h->" << (*this).h << endl;
+Hannah::Hannah(int a) {
+	num = a;
+}
+
+Hannah Hannah::operator+(Hannah aso){
+	Hannah brandNew;
+	brandNew.num = num + aso.num;
+	return(brandNew);
 }

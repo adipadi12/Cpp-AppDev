@@ -3,9 +3,9 @@
 
 class Hannah {
 public:
+	int num;
+	Hannah();
 	Hannah(int);
-	void printShit();
-private:
-	int h;
+	Hannah operator+(Hannah);
 };
 #endif // !HANNAH_H

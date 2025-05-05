@@ -10,8 +10,12 @@
 using namespace std;
 
 int main() {
-	Hannah ho(23); //ho object takes address of Hannah and stores it in this keyword
-	ho.printShit();
+	Hannah a(34);
+	Hannah b(20);
+	Hannah c;
+
+	c = a + b;
+	cout << c.num << endl;
 }
 
 //int main() {
